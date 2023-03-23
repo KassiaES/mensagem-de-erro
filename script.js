@@ -1,23 +1,25 @@
-
+// construção do botão 
 const botao = document.querySelector('button')
+
+// leitura do clique do botão
 botao.addEventListener('click', () => {
-    const input = document.querySelector('input')
-
-    if(input.value) {
-        console.log('Enviar')
-    } else {
-        const mensagem = document.createElement(`p`)
-        mensagem.innerText = `Ops! Preencha o campo`
-
-        document.getElementById('root').appendChild(mensagem)
-
-        setTimeout(() => {
-            mensagem.remove()
-        }, 3000)
-
-
-    }
-
-
-
+    // caso seja clicado inicia com o processo randomico
+    const numAleatorio = parseInt(Math.random() * 2)
+    deuErro(numAleatorio)
+    .then(() => {
+        console.log(`${numAleatorio} é impar`)
+    })
+    .catch(() => {
+        console.log(`${numAleatorio} é par`)
+    })    
 })
+
+const deuErro = (numAleatorio) => {
+    return new Promise ((resolve, reject) => {
+        if(numAleatorio % 2 === 0) {
+            reject(numAleatorio)
+        } else {            
+            resolve(`${numAleatorio} é impar`)
+        }
+    })
+}
