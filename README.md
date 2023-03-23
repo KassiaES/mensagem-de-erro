@@ -26,17 +26,6 @@ Uma promise é considerada resolvida se for cumprida ou rejeitada, mas não pend
 
 <img src="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png">
 
-### Fetch
-A API Fetch fornece uma interface JavaScript para acessar e manipular partes do pipeline HTTP, tais como os pedidos e respostas. Ela também fornece o método global fetch() (en-US) que fornece uma maneira fácil e lógica para buscar recursos de forma assíncrona através da rede.
-
-Este tipo de funcionalidade era obtida anteriormente utilizando XMLHttpRequest. Fetch fornece uma alternativa melhor que pode ser facilmente utilizada por outras tecnologias como Service Workers (en-US). Fetch também provê um lugar lógico único para definir outros conceitos relacionados ao protocolo HTTP como CORS e extensões ao HTTP.
-
-Note que a especificação fetch() difere de jQuery.ajax(), principalmente, de três formas:
-
-* A Promise retornada do fetch() não rejeitará o status do erro HTTP, mesmo que a resposta seja um HTTP 404 ou 500. Em vez disso, ela irá resolver normalmente (com o status ok definido como falso), e só irá rejeitar se houver falha na rede ou se algo impedir a requisição de ser completada.
-* fetch() não receberá cookies cross-site; você não pode estabelecer uma conexão cross-site usando fetch. Cabeçalhos Set-Cookie de outros sites são ignorados silenciosamente.
-* fetch() não enviará cookies, a não ser que seja definida a opção credentials do parâmetro init.
-
 ### Random
 A função Math.random() retorna um número pseudo-aleatório no intervalo [0, 1[, ou seja, de 0 (inclusivo) até, mas não incluindo, 1 (exclusivo), que depois você pode dimensionar para um intervalo desejado. A implementação seleciona uma semente para o algoritmo de geração de números aleatórios; esta semente não pode ser escolhida ou reatribuída.
 
@@ -52,4 +41,4 @@ Uma função assíncrona pode conter uma expressão await, que pausa a execuçã
 | Promises | [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise) |
 | Random | [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random/](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random/) |
 | Funções Assíncronas | [https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function) |
-| Fetch | [https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) |
+
