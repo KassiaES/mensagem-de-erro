@@ -1,8 +1,7 @@
 body {
-    background-size:cover;
-    background-image: url("./carregando.gif")    
+    background-color:bisque;
+         
 }
-
 button {   
     background-color:orange;
     display: block;
@@ -13,4 +12,15 @@ button {
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
     font-size: large;
     border-radius: 10px;      
+}
+
+p {
+    text-align: center;
+    font-size:xx-large;
+}
+
+img {
+    max-width: 50%; 
+    margin: auto;
+    display: block;   
 }
